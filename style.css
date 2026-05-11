@@ -538,6 +538,9 @@ button { cursor: pointer; font-family: inherit; }
 .footer-links h4 { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: .4rem; }
 .footer-links a { font-size: .85rem; font-weight: 300; color: rgba(255,255,255,.55); transition: color .2s; }
 .footer-links a:hover { color: #fff; }
+.social-icons { display: flex; gap: .65rem; }
+.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,.1); color: rgba(255,255,255,.6); font-size: .9rem; transition: all .2s; }
+.social-icons a:hover { background: var(--wa); color: #fff; }
 .footer-bottom { padding: 1.25rem 0; }
 .footer-bottom .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
 .footer-bottom span { font-size: .78rem; color: rgba(255,255,255,.28); }
