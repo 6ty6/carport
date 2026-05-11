@@ -42,7 +42,7 @@
 
     <div class="header-right">
       <a class="wa-btn wa-btn--sm"
-         href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
+         href="https://wa.me/233000000000?text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
          target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.519 5.831L.017 23.949l6.256-1.641A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm.001 21.818a9.823 9.823 0 01-5.011-1.369l-.36-.214-3.714.975.99-3.617-.234-.371A9.818 9.818 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.419 0 9.818 4.4 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
         Get a Quote
@@ -69,7 +69,7 @@
       <p class="hero-desc">Custom carports fabricated on your property across Greater Accra. From a single sedan bay to a 20-car commercial fleet — we design it, build it, and stand behind it.</p>
       <div class="hero-btns">
         <a class="wa-btn wa-btn--lg"
-           href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
+           href="https://wa.me/233000000000?text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
            target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.519 5.831L.017 23.949l6.256-1.641A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm.001 21.818a9.823 9.823 0 01-5.011-1.369l-.36-.214-3.714.975.99-3.617-.234-.371A9.818 9.818 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.419 0 9.818 4.4 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
           Chat on WhatsApp
@@ -105,6 +105,12 @@
         <input type="text" id="searchInput" class="search-inp" placeholder="Search by size, roof type, material, use…" autocomplete="off" spellcheck="false"/>
         <button class="search-x" id="searchClear" title="Clear search" style="display:none;">✕</button>
       </div>
+      <!-- Filter button lives RIGHT next to search bar on mobile -->
+      <button class="mob-filter-btn" id="mobFilterBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+        Filters
+        <span class="filter-count-badge" id="filterBadge" style="display:none;">0</span>
+      </button>
       <div class="car-finder">
         <label for="carSelect">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V9a2 2 0 012-2h16a2 2 0 012 2v6a2 2 0 01-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 7l2-4h10l2 4"/></svg>
@@ -185,6 +191,11 @@
         <div class="sidebar-top">
           <h3>Filters</h3>
           <button class="reset-btn" id="resetAll">Reset all</button>
+        </div>
+        <!-- Mobile-only reset bar — visible at top when drawer opens -->
+        <div class="sidebar-reset-bar" id="sidebarResetBar">
+          <span id="sidebarFilterCount">No filters active</span>
+          <button class="sidebar-reset-full" id="resetAllMobile">Reset All Filters</button>
         </div>
 
         <!-- Capacity -->
@@ -349,22 +360,16 @@
         <div class="no-results" id="noResults" style="display:none;">
           <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="38" stroke="#DBEAFE" stroke-width="2.5"/><path d="M25 55L40 25l15 30" stroke="#93C5FD" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40" cy="58" r="2.5" fill="#93C5FD"/></svg>
           <h3>No carports match your filters</h3>
-          <p>Try adjusting the filters — or <a href="whatsapp://send?phone=233203379841" target="_blank">message us on WhatsApp</a>. We build custom to any spec.</p>
+          <p>Try adjusting the filters — or <a href="https://wa.me/233000000000" target="_blank">message us on WhatsApp</a>. We build custom to any spec.</p>
           <button class="btn-outline" id="noResReset">Reset Filters</button>
         </div>
 
       </div>
     </div><!-- end browse-layout -->
 
-    <!-- Mobile filter button -->
-    <button class="mob-filter-btn" id="mobFilterBtn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
-      Filters
-      <span class="filter-count-badge" id="filterBadge" style="display:none;">0</span>
-    </button>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-  </div>
+  </div><!-- end .container -->
 </section>
 
 <!-- ====================================================
@@ -389,7 +394,7 @@
             <span>Budget-friendly</span><span>Easy repair</span><span>Locally available</span>
           </div>
           <a class="mat-wa"
-             href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27d+like+to+know+more+about+Local+Board+carports."
+             href="https://wa.me/233000000000?text=Hi%2C+I%27d+like+to+know+more+about+Local+Board+carports."
              target="_blank" rel="noopener">Ask about this material</a>
         </div>
       </div>
@@ -405,7 +410,7 @@
             <span>UV resistant</span><span>Lightweight</span><span>Water-resistant</span>
           </div>
           <a class="mat-wa"
-             href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27d+like+to+know+more+about+Car+Board+Fabric+carports."
+             href="https://wa.me/233000000000?text=Hi%2C+I%27d+like+to+know+more+about+Car+Board+Fabric+carports."
              target="_blank" rel="noopener">Ask about this material</a>
         </div>
       </div>
@@ -421,7 +426,7 @@
             <span>Translucent option</span><span>Corrosion-free</span><span>Long-lasting</span>
           </div>
           <a class="mat-wa"
-             href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27d+like+to+know+more+about+Fiberglass+carports."
+             href="https://wa.me/233000000000?text=Hi%2C+I%27d+like+to+know+more+about+Fiberglass+carports."
              target="_blank" rel="noopener">Ask about this material</a>
         </div>
       </div>
@@ -437,7 +442,7 @@
             <span>Premium grade</span><span>Commercial ready</span><span>Heat resistant</span>
           </div>
           <a class="mat-wa"
-             href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27d+like+to+know+more+about+Imported+Sheet+carports."
+             href="https://wa.me/233000000000?text=Hi%2C+I%27d+like+to+know+more+about+Imported+Sheet+carports."
              target="_blank" rel="noopener">Ask about this material</a>
         </div>
       </div>
@@ -498,7 +503,7 @@
     </div>
     <div class="contact-cta-box">
       <a class="wa-btn wa-btn--xl"
-         href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
+         href="https://wa.me/233000000000?text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
          target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.519 5.831L.017 23.949l6.256-1.641A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm.001 21.818a9.823 9.823 0 01-5.011-1.369l-.36-.214-3.714.975.99-3.617-.234-.371A9.818 9.818 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.419 0 9.818 4.4 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
         Chat on WhatsApp
@@ -540,7 +545,7 @@
     </div>
     <div class="footer-links">
       <h4>Get In Touch</h4>
-      <a href="whatsapp://send?phone=233203379841" target="_blank">WhatsApp Us</a>
+      <a href="https://wa.me/233000000000" target="_blank">WhatsApp Us</a>
       <a href="tel:+233000000000">+233 00 000 0000</a>
       <span style="color:rgba(255,255,255,.35);font-size:.8rem;">Mon–Sat · 8am–6pm</span>
     </div>
@@ -557,7 +562,7 @@
   FLOATING WA BUTTON
 ===================================================== -->
 <a class="float-wa"
-   href="whatsapp://send?phone=233203379841&text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
+   href="https://wa.me/233000000000?text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"
    target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.519 5.831L.017 23.949l6.256-1.641A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm.001 21.818a9.823 9.823 0 01-5.011-1.369l-.36-.214-3.714.975.99-3.617-.234-.371A9.818 9.818 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.419 0 9.818 4.4 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
   <span>Get a Quote</span>

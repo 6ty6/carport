@@ -279,11 +279,11 @@ const CARPORTS = [
 ];
 
 // ─── WA NUMBER ──────────────────────────────
-const WA = '233203379841';
+const WA = '233000000000';
 
 function waLink(name) {
   const msg = encodeURIComponent(`Hi, I'm interested in the "${name}" carport. Can you help me with a quote?`);
-  return `whatsapp://send?phone=${WA}&text=${msg}`;
+  return `https://wa.me/${WA}?text=${msg}`;
 }
 
 // ─── STATE ──────────────────────────────────
@@ -398,6 +398,12 @@ function render() {
   const fc = countActiveFilters();
   if (fc > 0) { badge.style.display = 'flex'; badge.textContent = fc; }
   else { badge.style.display = 'none'; }
+
+  // Update mobile sidebar filter count
+  const filterCountEl = $('sidebarFilterCount');
+  if (filterCountEl) {
+    filterCountEl.textContent = fc > 0 ? `${fc} filter${fc !== 1 ? 's' : ''} active` : 'No filters active';
+  }
 
   if (filtered.length === 0) {
     noRes.style.display = 'block';
@@ -527,6 +533,7 @@ $('carSelect').addEventListener('change', e => {
 // ─── RESET BUTTONS ──────────────────────────
 $('resetAll').addEventListener('click', resetAll);
 $('noResReset').addEventListener('click', resetAll);
+$('resetAllMobile').addEventListener('click', resetAll);
 
 // ─── MOBILE SIDEBAR ─────────────────────────
 const sidebar  = $('filterSidebar');
