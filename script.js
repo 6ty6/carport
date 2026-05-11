@@ -1,7 +1,7 @@
 'use strict';
 
 // ─────────────────────────────────────────────
-// CARPORT DATABASE
+// CANOPY/CARPORT DATABASE
 // Size format: Width x Length x Eave Height (feet)
 // Based on real industry standard dimensions
 // ─────────────────────────────────────────────
@@ -279,10 +279,10 @@ const CARPORTS = [
 ];
 
 // ─── WA NUMBER ──────────────────────────────
-const WA = '233000000000';
+const WA = '233244720778';
 
 function waLink(name) {
-  const msg = encodeURIComponent(`Hi, I'm interested in the "${name}" carport. Can you help me with a quote?`);
+  const msg = encodeURIComponent(`Hi, I'm interested in the "${name}" canopy/carport. Can you help me with a quote?`);
   return `https://wa.me/${WA}?text=${msg}`;
 }
 
@@ -407,10 +407,10 @@ function render() {
 
   if (filtered.length === 0) {
     noRes.style.display = 'block';
-    count.textContent = 'No carports found';
+    count.textContent = 'No canopies/carports found';
   } else {
     noRes.style.display = 'none';
-    count.textContent = `Showing ${filtered.length} of ${CARPORTS.length} carport${filtered.length !== 1 ? 's' : ''}`;
+    count.textContent = `Showing ${filtered.length} of ${CARPORTS.length} canopy/carport${filtered.length !== 1 ? 's' : ''}`;
     filtered.forEach((c, i) => {
       const card = buildCard(c);
       card.style.animationDelay = `${i * 0.04}s`;
