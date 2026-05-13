@@ -37,7 +37,7 @@ button { cursor: pointer; font-family: inherit; }
   --shlg:   0 12px 40px rgba(15,45,107,.14);
 }
 
-.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; overflow: hidden; }
 
 /* ─── SECTION HEADERS ─────────────────── */
 .sec-head { text-align: center; max-width: 680px; margin: 0 auto 3rem; }
@@ -638,10 +638,15 @@ button { cursor: pointer; font-family: inherit; }
 @media (max-width: 1100px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
-@media (max-width: 900px) {
-  /* Prevent any horizontal overflow on tablet/mobile */
+@media (max-width: 767px) {
+  /* Prevent any horizontal overflow on phone/mobile */
   body, html { overflow-x: hidden; max-width: 100vw; }
   * { max-width: 100%; }
+
+  .header-inner { justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 0 1rem; }
+  .logo-mark { width: 30px; height: 25px; }
+  .logo-big { font-size: 1rem; }
+  .logo-small { font-size: .55rem; }
 
   .browse-layout { grid-template-columns: 1fr; }
 
@@ -664,7 +669,7 @@ button { cursor: pointer; font-family: inherit; }
 
   .apply-btn { display: block; }
 
-  /* Stack search row on tablet */
+  /* Stack search row on phone */
   .search-row { flex-wrap: wrap; }
   .search-box { min-width: 0; flex: 1; }
 
@@ -708,17 +713,21 @@ button { cursor: pointer; font-family: inherit; }
     grid-template-rows: auto auto;
     gap: .65rem;
   }
-  .search-box { grid-column: 1 / 2; grid-row: 1; min-width: 0; }
-  .mob-filter-btn { grid-column: 2 / 3; grid-row: 1; }
-  .car-finder { grid-column: 1 / -1; grid-row: 2; width: 100%; }
+  .search-box { grid-column: 1 / 2; grid-row: 1; min-width: 0; max-width: 100%; }
+  .mob-filter-btn { grid-column: 2 / 3; grid-row: 1; width: auto; min-width: fit-content; }
+  .car-finder { grid-column: 1 / -1; grid-row: 2; width: 100%; max-width: 100%; }
   .car-finder label { white-space: normal; }
   .car-finder select { width: 100%; min-width: 0; }
 
-  .hero-btns { flex-direction: column; align-items: flex-start; }
-  .hero-btns .wa-btn, .hero-btns .btn-ghost { width: 100%; justify-content: center; }
+  .hero-btns { flex-direction: column; align-items: stretch; gap: .75rem; }
+  .hero-btns .wa-btn, .hero-btns .btn-ghost { width: 100%; justify-content: center; padding: .75rem 1.4rem; }
 
-  /* Cards single column */
-  .carport-grid { grid-template-columns: 1fr; }
+  .carport-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
 
   /* Materials single column */
   .mats-grid { grid-template-columns: 1fr; }
@@ -750,4 +759,207 @@ button { cursor: pointer; font-family: inherit; }
 
   /* About badge on mobile */
   .about-badge { position: absolute; bottom: 12px; right: 12px; padding: 1rem 1.25rem; }
+}
+
+/* =========================================
+   EXTRA SMALL DEVICES (300px - 375px)
+========================================= */
+@media (max-width: 375px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  /* =========================
+     HEADER
+  ========================= */
+  .header-inner,
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  /* LOGO */
+  .logo {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .logo h1,
+  .logo-big {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .logo span,
+  .logo-small,
+  .tagline {
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
+  /* CTA BUTTON */
+  .cta-btn,
+  .quote-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* HAMBURGER */
+  .hamburger {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+
+  .hamburger span {
+    width: 20px;
+  }
+
+  /* =========================
+     HERO SECTION
+  ========================= */
+  .hero,
+  .hero-inner {
+    padding: 50px 0 40px;
+  }
+
+  .hero-content,
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  /* HERO BUTTONS */
+  .hero-actions,
+  .hero-btns,
+  .video-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-btn,
+  .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* =========================
+     CARDS / GRIDS
+  ========================= */
+  .services-grid,
+  .projects-grid,
+  .carport-grid,
+  .footer-grid,
+  .contact-grid,
+  .about-grid,
+  .mv-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* =========================
+     IMAGES
+  ========================= */
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero-image img,
+  .about-image img,
+  .story-image img {
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  /* =========================
+     VIDEO SECTION
+  ========================= */
+  .video-section {
+    height: 60vh;
+  }
+
+  .video-text h1 {
+    font-size: 24px;
+  }
+
+  .video-text p {
+    font-size: 14px;
+  }
+
+  /* =========================
+     PROJECT CARDS
+  ========================= */
+  .project-card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* =========================
+     NAV MENU
+  ========================= */
+  .nav-links,
+  .main-nav {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav-links a,
+  .main-nav a {
+    width: 100%;
+    padding: 14px;
+  }
+
 }
