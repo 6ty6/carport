@@ -16,31 +16,28 @@
   HEADER
 ===================================================== -->
 <header class="site-header" id="siteHeader">
-  <div class="container header-inner">
-    <a href="#" class="logo">
-      <svg class="logo-mark" viewBox="0 0 52 44" fill="none">
-        <path d="M4 20L26 4L48 20" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <rect x="4" y="18" width="44" height="7" rx="2" fill="white" opacity="0.9"/>
-        <rect x="6" y="25" width="6" height="16" rx="2" fill="white" opacity="0.75"/>
-        <rect x="40" y="25" width="6" height="16" rx="2" fill="white" opacity="0.75"/>
-        <rect x="15" y="30" width="22" height="9" rx="3" fill="white" opacity="0.2"/>
-        <path d="M17 30L19.5 24H32.5L35 30" fill="white" opacity="0.25"/>
-        <circle cx="20" cy="39" r="2.5" fill="white" opacity="0.5"/>
-        <circle cx="32" cy="39" r="2.5" fill="white" opacity="0.5"/>
-      </svg>
+  <!-- Full-width inner — no container class so nav can be truly centred -->
+  <div class="header-inner">
+
+    <!-- LEFT: Logo -->
+    <a href="#home" class="logo">
+      <img class="logo-mark" src="images/logo.png" alt="AW Canopies and Carports">
       <div class="logo-words">
         <span class="logo-big">AW Canopies</span>
         <span class="logo-small">and Carports · Accra</span>
       </div>
     </a>
 
+    <!-- CENTER: Nav links -->
     <nav class="main-nav" id="mainNav">
-      <a href="#browse">Browse</a>
-      <a href="#materials">Materials</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html"  class="active">Home</a>
+      <a href="index.html#browse">Browse</a>
+      <a href="index.html#materials">Materials</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
 
+    <!-- RIGHT: WhatsApp CTA + hamburger -->
     <div class="header-right">
       <a class="wa-btn wa-btn--sm"
          href="https://wa.me/233244720778?text=Hi%2C+I%27m+interested+in+a+canopy+or+carport.+Can+you+help+me+with+a+quote%3F"
@@ -53,6 +50,15 @@
       </button>
     </div>
   </div>
+
+  <!-- Mobile nav drawer -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#browse">Browse</a>
+    <a href="#materials">Materials</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <!-- ====================================================
@@ -65,7 +71,6 @@
   </div>
   <div class="container hero-inner">
     <div class="hero-content">
-      <span class="hero-badge">📍 Accra, Ghana · Built on-site</span>
       <h1 class="hero-title">Where quality meets<br/><em>affordability.</em></h1>
       <p class="hero-desc">Custom canopies and carports fabricated on your property across Greater Accra. From saloon cars to 4x4s, ambulances, pickups, rams and any other vehicle — we design it, build it, and stand behind it.</p>
       <div class="hero-btns">
@@ -215,9 +220,87 @@
             <button class="cap-pill" data-cap="1">1 Car</button>
             <button class="cap-pill" data-cap="2">2 Cars</button>
             <button class="cap-pill" data-cap="3">3 Cars</button>
-            <button class="cap-pill" data-cap="4">4 Cars</button>
-            <button class="cap-pill" data-cap="5+">5+ Cars</button>
+            <button class="cap-pill cap-pill--special" data-cap="4+">4+ Cars</button>
           </div>
+        </div>
+
+        <!-- 4+ Cars Custom Enquiry Form (hidden until 4+ is clicked) -->
+        <div class="custom-enquiry-box" id="customEnquiryBox" style="display:none;">
+          <div class="enquiry-box-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <span>Tell us what you need</span>
+          </div>
+          <p class="enquiry-box-sub">For 4+ cars we build fully custom structures. Fill this in and we'll send it straight to WhatsApp.</p>
+
+          <div class="enq-field">
+            <label>Vehicle type *</label>
+            <select id="enqVehicleType">
+              <option value="">— Select vehicle type —</option>
+              <option>Saloon / Sedan</option>
+              <option>Compact / Hatchback</option>
+              <option>Mid-size SUV / Crossover</option>
+              <option>Large SUV / 4x4</option>
+              <option>Pickup Truck</option>
+              <option>Ambulance / Emergency</option>
+              <option>Van / Minibus</option>
+              <option>Commercial Truck</option>
+              <option>Mixed fleet</option>
+            </select>
+          </div>
+
+          <div class="enq-field">
+            <label>Number of that vehicle *</label>
+            <input type="number" id="enqVehicleCount" min="4" max="50" placeholder="e.g. 6"/>
+          </div>
+
+          <div class="enq-field">
+            <label>Roof style *</label>
+            <select id="enqRoofType">
+              <option value="">— Select roof style —</option>
+              <option>Curved Roof</option>
+              <option>Flat Roof</option>
+              <option>Gable / A-Frame</option>
+              <option>Open Canopy</option>
+              <option>Not sure — advise me</option>
+            </select>
+          </div>
+
+          <div class="enq-field">
+            <label>Roofing material *</label>
+            <div class="enq-radio-group">
+              <label class="enq-radio">
+                <input type="radio" name="enqWaterproof" value="Waterproof Fabric"/>
+                <span class="enq-radio-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v4l3 3"/></svg>
+                  Waterproof Fabric
+                </span>
+              </label>
+              <label class="enq-radio">
+                <input type="radio" name="enqWaterproof" value="Non-Waterproof Fabric"/>
+                <span class="enq-radio-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  Non-Waterproof Fabric
+                </span>
+              </label>
+              <label class="enq-radio">
+                <input type="radio" name="enqWaterproof" value="Loco Board Roofing"/>
+                <span class="enq-radio-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                  Loco Board
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="enq-field">
+            <label>Any extra details? (optional)</label>
+            <textarea id="enqNotes" rows="2" placeholder="e.g. compound size, any height restrictions…"></textarea>
+          </div>
+
+          <button class="enq-submit-btn" id="enqSubmitBtn">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.519 5.831L.017 23.949l6.256-1.641A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm.001 21.818a9.823 9.823 0 01-5.011-1.369l-.36-.214-3.714.975.99-3.617-.234-.371A9.818 9.818 0 012.182 12c0-5.418 4.4-9.818 9.818-9.818 5.419 0 9.818 4.4 9.818 9.818 0 5.419-4.399 9.818-9.818 9.818z"/></svg>
+            Send via WhatsApp
+          </button>
         </div>
 
         <!-- Roof Type — VISUAL -->
@@ -229,58 +312,23 @@
           <div class="roof-visuals" id="roofVisuals">
 
             <label class="roof-option">
-              <input type="checkbox" name="roof" value="Regular Roof"/>
+              <input type="checkbox" name="roof" value="Curved Roof"/>
               <div class="roof-card">
                 <svg viewBox="0 0 80 50" fill="none">
-                  <!-- Regular roof: curved/rounded -->
+                  <!-- Curved roof: rounded and smooth -->
                   <rect x="2" y="35" width="76" height="12" rx="2" fill="#DBEAFE"/>
                   <path d="M2 35 Q40 14 78 35" fill="#1B4FD8" opacity="0.85"/>
                   <path d="M2 35 Q40 18 78 35" fill="none" stroke="white" stroke-width="1.5" opacity="0.4"/>
                   <line x1="6" y1="35" x2="6" y2="47" stroke="#0F2D6B" stroke-width="2.5" stroke-linecap="round"/>
                   <line x1="74" y1="35" x2="74" y2="47" stroke="#0F2D6B" stroke-width="2.5" stroke-linecap="round"/>
                 </svg>
-                <span>Regular Roof</span>
+                <span>Curved Roof</span>
               </div>
             </label>
 
-            <label class="roof-option">
-              <input type="checkbox" name="roof" value="Boxed Eave"/>
-              <div class="roof-card">
-                <svg viewBox="0 0 80 50" fill="none">
-                  <!-- Boxed eave: A-frame with horizontal panels -->
-                  <rect x="2" y="35" width="76" height="12" rx="2" fill="#DBEAFE"/>
-                  <path d="M2 35 L40 12 L78 35Z" fill="#1B4FD8" opacity="0.85"/>
-                  <line x1="10" y1="30" x2="70" y2="30" stroke="white" stroke-width="1" opacity="0.4"/>
-                  <line x1="18" y1="25" x2="62" y2="25" stroke="white" stroke-width="1" opacity="0.3"/>
-                  <line x1="6" y1="35" x2="6" y2="47" stroke="#0F2D6B" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="74" y1="35" x2="74" y2="47" stroke="#0F2D6B" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>
-                <span>Boxed Eave</span>
-              </div>
-            </label>
 
             <label class="roof-option">
-              <input type="checkbox" name="roof" value="Vertical Roof"/>
-              <div class="roof-card">
-                <svg viewBox="0 0 80 50" fill="none">
-                  <!-- Vertical roof: sharp A-frame with vertical stripes -->
-                  <rect x="2" y="35" width="76" height="12" rx="2" fill="#DBEAFE"/>
-                  <path d="M2 35 L40 10 L78 35Z" fill="#1B4FD8" opacity="0.85"/>
-                  <!-- Vertical lines -->
-                  <line x1="16" y1="35" x2="28" y2="21" stroke="white" stroke-width="1" opacity="0.4"/>
-                  <line x1="28" y1="35" x2="34" y2="16.5" stroke="white" stroke-width="1" opacity="0.4"/>
-                  <line x1="40" y1="35" x2="40" y2="10" stroke="white" stroke-width="1" opacity="0.4"/>
-                  <line x1="52" y1="35" x2="46" y2="16.5" stroke="white" stroke-width="1" opacity="0.4"/>
-                  <line x1="64" y1="35" x2="52" y2="21" stroke="white" stroke-width="1" opacity="0.4"/>
-                  <line x1="6" y1="35" x2="6" y2="47" stroke="#0F2D6B" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="74" y1="35" x2="74" y2="47" stroke="#0F2D6B" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>
-                <span>Vertical Roof</span>
-              </div>
-            </label>
-
-            <label class="roof-option">
-              <input type="checkbox" name="roof" value="Open Canopy"/>
+              <input type="checkbox" name="roof" value="Flat Roof"/>
               <div class="roof-card">
                 <svg viewBox="0 0 80 50" fill="none">
                   <!-- Open canopy: flat with no closed sides -->
@@ -293,60 +341,36 @@
                   <line x1="26" y1="30" x2="26" y2="47" stroke="#1B4FD8" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
                   <line x1="54" y1="30" x2="54" y2="47" stroke="#1B4FD8" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
                 </svg>
-                <span>Open Canopy</span>
+                <span> Flat Roof</span>
               </div>
             </label>
 
           </div><!-- end roof-visuals -->
         </div>
 
-        <!-- Cover Type -->
+        <!-- Roofing Material -->
         <div class="filter-group">
           <div class="fg-label">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            Cover Type
+            Roofing Material
           </div>
           <div class="check-list" id="coverList">
             <label class="chk-opt">
-              <input type="checkbox" name="cover" value="Full Cover"/> Full Cover
+              <input type="checkbox" name="cover" value="Non Waterproof"/> Non Waterproof fabric
+              <small>Not fully waterproof, suitable for light rain</small>
+            </label>
+            <label class="chk-opt">
+              <input type="checkbox" name="cover" value="Loco Board"/> Loco Board Roofing
+              <small>Roof panels made with the loco board material</small>
+            </label>
+            <label class="chk-opt">
+              <input type="checkbox" name="cover" value="Waterproof"/>  Waterproof Fabric
               <small>Fully enclosed roof, rain & sun protection</small>
-            </label>
-            <label class="chk-opt">
-              <input type="checkbox" name="cover" value="Partial Cover"/> Partial Cover
-              <small>Roof panels on main sections only</small>
-            </label>
-            <label class="chk-opt">
-              <input type="checkbox" name="cover" value="Frame Only"/> Frame Only
-              <small>Steel frame structure, no roofing material</small>
             </label>
           </div>
         </div>
 
-        <!-- Material -->
-        <div class="filter-group">
-          <div class="fg-label">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3h2a2 2 0 012 2v2H4V5a2 2 0 012-2h2"/></svg>
-            Material
-          </div>
-          <div class="check-list" id="materialList">
-            <label class="chk-opt">
-              <input type="checkbox" name="material" value="Local Board"/> Local Board
-              <small>Affordable, locally sourced, easy repair</small>
-            </label>
-            <label class="chk-opt">
-              <input type="checkbox" name="material" value="Car Board Fabric"/> Car Board Fabric
-              <small>UV-resistant coated fabric, lightweight</small>
-            </label>
-            <label class="chk-opt">
-              <input type="checkbox" name="material" value="Fiberglass"/> Fiberglass
-              <small>Translucent option, corrosion-free</small>
-            </label>
-            <label class="chk-opt">
-              <input type="checkbox" name="material" value="Imported Sheets"/> Imported Sheets
-              <small>Premium grade, commercial-ready</small>
-            </label>
-          </div>
-        </div>
+       
 
         <button class="apply-btn" id="applyMobile">Apply Filters</button>
       </aside><!-- end sidebar -->
@@ -391,7 +415,7 @@
     <div class="mats-grid">
       <div class="mat-card">
         <div class="mat-img">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Local Board canopy/carport material"/>
+          <img src="images/local.png" alt="Local Board canopy/carport material"/>
         </div>
         <div class="mat-body">
           <h3>Local Board</h3>
@@ -407,7 +431,7 @@
 
       <div class="mat-card">
         <div class="mat-img">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Car Board Fabric canopy/carport"/>
+          <img src="images/OIP.webp" alt="Car Board Fabric canopy/carport"/>
         </div>
         <div class="mat-body">
           <h3>Car Board Fabric</h3>
@@ -423,7 +447,7 @@
 
       <div class="mat-card">
         <div class="mat-img">
-          <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600&q=80" alt="Fiberglass canopy/carport panels"/>
+          <img src="images/OIP (1).webp" alt="Fiberglass canopy/carport panels"/>
         </div>
         <div class="mat-body">
           <h3>Fiberglass</h3>
@@ -439,7 +463,7 @@
 
       <div class="mat-card">
         <div class="mat-img">
-          <img src="https://images.unsplash.com/photo-1471174107790-a2ac65dbf9e2?w=600&q=80" alt="Imported metal sheet canopy/carport"/>
+          <img src="images/OIP (2).webp" alt="Imported metal sheet canopy/carport"/>
         </div>
         <div class="mat-body">
           <h3>Imported Sheets</h3>
@@ -462,7 +486,7 @@
 <section class="about-sec" id="about">
   <div class="container about-inner">
     <div class="about-img-col">
-      <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80" alt="AW Canopies and Carports team at work" class="about-img"/>
+      <img src="images/29.jpg" alt="AW Canopies and Carports team at work" class="about-img"/>
       <div class="about-badge">
         <span class="badge-num">500+</span>
         <span class="badge-txt">Canopies built across Greater Accra</span>
@@ -474,12 +498,7 @@
       <p>AW Canopies and Carports is a top-notch company specializing in the design, fabrication, and installation of high-quality canopies and carports at affordable prices for clients across the Greater Accra Region and other parts of Ghana.</p>
       <p>With over six (6) years of industry experience, the company has built a strong reputation for delivering durable, aesthetically pleasing, and reliable canopy and carport solutions tailored to meet client needs.</p>
       <p>The company is responsible for providing premium canopy and carport services for residential, commercial, and institutional projects while maintaining high standards of quality, professionalism, and customer satisfaction.</p>
-      <div class="about-checks">
-        <span>✅ Built on your site</span>
-        <span>✅ Local + imported materials</span>
-        <span>✅ Residential & commercial</span>
-        <span>✅ Custom to any dimension</span>
-      </div>
+     
     </div>
   </div>
 </section>
@@ -584,16 +603,32 @@
 <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
   <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
   <div class="modal-inner">
-    <!-- Left: Image -->
-    <div class="modal-img-col">
-      <img id="modalImg" src="" alt="" class="modal-main-img"/>
+
+    <!-- TOP: Image gallery -->
+    <div class="modal-gallery">
+      <!-- Main image with prev/next arrows -->
+      <div class="modal-main-img-wrap">
+        <img id="modalImg" src="" alt="" class="modal-main-img"/>
+        <button class="mg-prev" id="mgPrev" aria-label="Previous image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="mg-next" id="mgNext" aria-label="Next image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="mg-counter" id="mgCounter">1 / 1</div>
+      </div>
+      <!-- Scrollable thumbnail strip -->
+      <div class="modal-thumbs" id="modalThumbs"></div>
     </div>
-    <!-- Right: Info -->
+
+    <!-- BOTTOM: Product info -->
     <div class="modal-info-col">
-      <span class="modal-cap-badge" id="modalCapBadge">1 Car</span>
-      <h2 class="modal-title" id="modalTitle"></h2>
-      <p class="modal-desc-short" id="modalDescShort"></p>
-      <p class="modal-sku" id="modalSku"></p>
+      <div class="modal-info-top">
+        <span class="modal-cap-badge" id="modalCapBadge">1 Car</span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc-short" id="modalDescShort"></p>
+        <p class="modal-sku" id="modalSku"></p>
+      </div>
 
       <!-- Tabs -->
       <div class="modal-tabs">
@@ -605,12 +640,12 @@
       <div class="modal-tab-content" id="tab-specs">
         <table class="specs-table" id="specsTable"></table>
         <div class="modal-dims">
-          <div class="dim-block" id="dimWidth">
+          <div class="dim-block">
             <svg viewBox="0 0 60 30" fill="none"><line x1="2" y1="15" x2="58" y2="15" stroke="#1B4FD8" stroke-width="2"/><line x1="2" y1="8" x2="2" y2="22" stroke="#1B4FD8" stroke-width="2"/><line x1="58" y1="8" x2="58" y2="22" stroke="#1B4FD8" stroke-width="2"/></svg>
             <span id="dimWidthVal">–</span>
             <small>Width</small>
           </div>
-          <div class="dim-block" id="dimLen">
+          <div class="dim-block">
             <svg viewBox="0 0 30 60" fill="none"><line x1="15" y1="2" x2="15" y2="58" stroke="#1B4FD8" stroke-width="2"/><line x1="8" y1="2" x2="22" y2="2" stroke="#1B4FD8" stroke-width="2"/><line x1="8" y1="58" x2="22" y2="58" stroke="#1B4FD8" stroke-width="2"/></svg>
             <span id="dimLenVal">–</span>
             <small>Length</small>

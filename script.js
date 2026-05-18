@@ -12,17 +12,17 @@ const CARPORTS = [
     name: 'Single Sedan Carport',
     capacity: 1,
     capLabel: '1 Car',
-    roof: 'Regular Roof',
-    cover: 'Full Cover',
+    roof: 'Curved Roof',
+    cover: 'Waterproof',
     material: 'Local Board',
     shortDesc: 'A compact single-bay shelter perfect for one sedan, hatchback or compact SUV. The most popular choice for family homes across Accra.',
-    fullDesc: 'Protect your vehicle from the harsh Accra sun and heavy rains with our 12×20×7 Single Sedan Carport. Built with a Regular Roof design that ensures efficient water runoff — no pooling, no leaks. Made with quality Local Board material, this structure is affordable, easy to repair, and blends naturally into residential settings. Our team fabricates it on your site, so it fits your compound exactly. Ideal for Toyota Corolla, Honda Civic, Hyundai Elantra, and similar-sized vehicles.',
+    fullDesc: 'Protect your vehicle from the harsh Accra sun and heavy rains with our 12×20×7 Single Sedan Carport. Built with a Curved Roof design that ensures efficient water runoff — no pooling, no leaks. Made with quality Local Board material, this structure is affordable, easy to repair, and blends naturally into residential settings. Our team fabricates it on your site, so it fits your compound exactly. Ideal for Toyota Corolla, Honda Civic, Hyundai Elantra, and similar-sized vehicles.',
     specs: {
       'Building Width': '12 FT (approx. 3.65m)',
       'Building Length': '20 FT (approx. 6.1m)',
       'Eave Height': '7 FT (approx. 2.13m)',
-      'Roof Type': 'Regular Roof',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Curved Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': 'Galvanized Steel Frame',
       'Roofing Material': 'Local Board',
       'Best For': 'Sedan, Hatchback, Small SUV',
@@ -32,6 +32,7 @@ const CARPORTS = [
     carTypes: ['compact', 'sedan'],
     skuCode: 'BC-SR-1201',
     tags: ['sedan', 'compact', 'corolla', 'civic', 'hatchback'],
+    images: ['images/1car.PNG', 'images/13.jpg', 'images/17.jpg'],
   },
   {
     id: 2,
@@ -39,17 +40,17 @@ const CARPORTS = [
     name: 'Double Family Carport',
     capacity: 2,
     capLabel: '2 Cars',
-    roof: 'Regular Roof',
-    cover: 'Full Cover',
+    roof: 'Curved Roof',
+    cover: 'Waterproof',
     material: 'Imported Sheets',
     shortDesc: 'Side-by-side bays for two family vehicles. Fits two sedans, saloons, or compact SUVs with comfortable space between them.',
-    fullDesc: 'Our 18×20×7 Double Family Carport is the most requested size for Accra homes with two vehicles. The Regular Roof design keeps rain off efficiently and the wide 18-foot span gives both vehicles breathing room — no squeezing in. Built with premium Imported Sheet roofing for a long-wearing, professional finish that handles the Ghanaian climate year-round. Perfect for mixed families running sedans and compact SUVs side by side.',
+    fullDesc: 'Our 18×20×7 Double Family Carport is the most requested size for Accra homes with two vehicles. The Curved Roof design keeps rain off efficiently and the wide 18-foot span gives both vehicles breathing room — no squeezing in. Built with premium Imported Sheet roofing for a long-wearing, professional finish that handles the Ghanaian climate year-round. Perfect for mixed families running sedans and compact SUVs side by side.',
     specs: {
       'Building Width': '18 FT (approx. 5.49m)',
       'Building Length': '20 FT (approx. 6.1m)',
       'Eave Height': '7 FT (approx. 2.13m)',
-      'Roof Type': 'Regular Roof',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Curved Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': 'Galvanized Steel Frame',
       'Roofing Material': 'Imported Sheets',
       'Best For': 'Two Sedans / Compact SUVs',
@@ -59,6 +60,7 @@ const CARPORTS = [
     carTypes: ['compact', 'sedan', 'midsuv'],
     skuCode: 'BC-DR-1801',
     tags: ['sedan', 'double', 'two cars', 'family', 'corolla', 'camry'],
+    images: ['images/2cars.jpg', 'images/23.jpg', 'images/23(1).jpg'],
   },
   {
     id: 3,
@@ -66,17 +68,17 @@ const CARPORTS = [
     name: 'SUV & Pickup Double Bay',
     capacity: 2,
     capLabel: '2 Cars',
-    roof: 'Boxed Eave',
-    cover: 'Full Cover',
+    roof: 'Flat Roof',
+    cover: 'Waterproof',
     material: 'Imported Sheets',
     shortDesc: 'Extra-wide, extra-tall double bay built specifically for large pickups and full-size SUVs. Handles Hilux, Fortuner, Land Cruiser Prado with ease.',
-    fullDesc: 'Built for the vehicles that need real space — the 20×20×9 SUV & Pickup Double Bay gives your large pickups and SUVs the room they deserve. The 9-foot eave height means even roof racks and bull bars clear the structure with no drama. The Boxed Eave roof adds structural strength and a clean, modern look. Imported Sheet roofing delivers long-term weather protection with zero maintenance headaches. Perfect for Toyota Hilux, Fortuner, Land Cruiser Prado, Ford Ranger, Isuzu D-Max.',
+    fullDesc: 'Built for the vehicles that need real space — the 20×20×9 SUV & Pickup Double Bay gives your large pickups and SUVs the room they deserve. The 9-foot eave height means even roof racks and bull bars clear the structure with no drama. The Flat Roof adds structural strength and a clean, modern look. Imported Sheet roofing delivers long-term weather protection with zero maintenance headaches. Perfect for Toyota Hilux, Fortuner, Land Cruiser Prado, Ford Ranger, Isuzu D-Max.',
     specs: {
       'Building Width': '20 FT (approx. 6.1m)',
       'Building Length': '20 FT (approx. 6.1m)',
       'Eave Height': '9 FT (approx. 2.74m)',
-      'Roof Type': 'Boxed Eave',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Flat Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': '14 Gauge Galvanized Steel',
       'Roofing Material': 'Imported Sheets',
       'Best For': 'Large SUVs, Pickup Trucks',
@@ -86,6 +88,7 @@ const CARPORTS = [
     carTypes: ['midsuv', 'largesuv', 'pickup'],
     skuCode: 'BC-BE-2001',
     tags: ['suv', 'pickup', 'hilux', 'fortuner', 'prado', 'ranger', 'd-max', 'large'],
+    images: ['images/2cars2.png', 'images/21.jpg', 'images/22.jpg'],
   },
   {
     id: 4,
@@ -93,8 +96,8 @@ const CARPORTS = [
     name: 'Single Long-Bay Shelter',
     capacity: 1,
     capLabel: '1 Car',
-    roof: 'Boxed Eave',
-    cover: 'Full Cover',
+    roof: 'Flat Roof',
+    cover: 'Waterproof',
     material: 'Fiberglass',
     shortDesc: 'A longer single bay ideal for vans, minibuses, or vehicles with a tow bar or boat trailer. Translucent fiberglass roof lets natural light in.',
     fullDesc: 'When your vehicle is longer than average — a Hiace minibus, a van, or a car with a trailer — you need the 12×30×8. The extra length means nothing overhangs the back. The Fiberglass roofing option is available in a translucent panel that lets daylight filter through, creating a bright, open shelter that doesn\'t feel like a dark shed. Great for homeowners who care about how things look as much as function. Corrosion-resistant and low maintenance.',
@@ -102,17 +105,18 @@ const CARPORTS = [
       'Building Width': '12 FT (approx. 3.65m)',
       'Building Length': '30 FT (approx. 9.14m)',
       'Eave Height': '8 FT (approx. 2.44m)',
-      'Roof Type': 'Boxed Eave',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Flat Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': 'Galvanized Steel Frame',
       'Roofing Material': 'Fiberglass (translucent option available)',
       'Best For': 'Van, Minibus, Long Vehicles',
     },
     dims: { w: '12 FT', l: '30 FT', h: '8 FT' },
-    img: 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=900&q=85',
+    img: 'images/1car1.PNG',
     carTypes: ['van'],
     skuCode: 'BC-LB-1201',
     tags: ['van', 'minibus', 'hiace', 'long', 'fiberglass', 'transit'],
+    images: ['images/1car1.PNG', 'images/2.PNG'],
   },
   {
     id: 5,
@@ -120,8 +124,8 @@ const CARPORTS = [
     name: 'Triple Home Carport',
     capacity: 3,
     capLabel: '3 Cars',
-    roof: 'Boxed Eave',
-    cover: 'Full Cover',
+    roof: 'Flat Roof',
+    cover: 'Waterproof',
     material: 'Imported Sheets',
     shortDesc: 'Three full bays under one continuous roof. The go-to choice for larger households or small businesses needing to cover a mixed fleet.',
     fullDesc: 'The 24×20×9 Triple Home Carport is built for households or small businesses that have outgrown a single- or double-bay structure. Three full bays side by side under one solid roof — accommodating any combination of sedans, SUVs, or pickups. The 9-foot eave height gives everyone clear entry without ducking. Imported Sheet roofing holds up under heavy rain and intense sun without warping or rusting. A single structure that eliminates the need for separate shelters across your property.',
@@ -129,35 +133,36 @@ const CARPORTS = [
       'Building Width': '24 FT (approx. 7.32m)',
       'Building Length': '20 FT (approx. 6.1m)',
       'Eave Height': '9 FT (approx. 2.74m)',
-      'Roof Type': 'Boxed Eave',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Flat Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': '14 Gauge Galvanized Steel',
       'Roofing Material': 'Imported Sheets',
       'Best For': 'Mixed Fleet: Sedans, SUVs, Pickups',
     },
     dims: { w: '24 FT', l: '20 FT', h: '9 FT' },
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85',
+    img: 'images/14.jpg',
     carTypes: ['compact', 'sedan', 'midsuv', 'pickup'],
     skuCode: 'BC-TR-2401',
     tags: ['three cars', 'triple', 'family', 'mixed', 'home'],
+    images: ['images/14.jpg', 'images/16.jpg', 'images/11.jpg'],
   },
-  {
+ /* {
     id: 6,
     size: '30×25×11',
     name: 'Commercial Gable Office Cover',
     capacity: 4,
     capLabel: '4 Cars',
-    roof: 'Vertical Roof',
-    cover: 'Full Cover',
+    roof: 'Curved Roof',
+    cover: 'Waterproof',
     material: 'Imported Sheets',
-    shortDesc: 'A wide-span structure built for office compounds and small commercial properties. Vertical roof handles heavy rain runoff perfectly.',
-    fullDesc: 'The 30×25×11 Commercial Gable Cover is designed for serious use — office parking bays, commercial compounds, or business fleet storage. The Vertical Roof design is the strongest and most weather-efficient option: water and debris run straight off without accumulating. At 11 feet of eave height, this structure clears even the tallest commercial vehicles with room to spare. Premium Imported Sheet roofing is rated for long-term commercial deployment. Custom sizing available for your exact parking layout.',
+    shortDesc: 'A wide-span structure built for office compounds and small commercial properties. Curved roof handles heavy rain runoff perfectly.',
+    fullDesc: 'The 30×25×11 Commercial Gable Cover is designed for serious use — office parking bays, commercial compounds, or business fleet storage. The Curved Roof design is the strongest and most weather-efficient option: water and debris run straight off without accumulating. At 11 feet of eave height, this structure clears even the tallest commercial vehicles with room to spare. Premium Imported Sheet roofing is rated for long-term commercial deployment. Custom sizing available for your exact parking layout.',
     specs: {
       'Building Width': '30 FT (approx. 9.14m)',
       'Building Length': '25 FT (approx. 7.62m)',
       'Eave Height': '11 FT (approx. 3.35m)',
-      'Roof Type': 'Vertical Roof',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Curved Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': '14 Gauge Heavy-Duty Galvanized Steel',
       'Roofing Material': 'Imported Sheets (Premium Grade)',
       'Best For': 'Office, Commercial, Mixed Fleet',
@@ -166,34 +171,35 @@ const CARPORTS = [
     img: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=900&q=85',
     carTypes: ['compact', 'sedan', 'midsuv', 'largesuv', 'pickup'],
     skuCode: 'BC-VR-3001',
-    tags: ['office', 'commercial', 'four cars', 'business', 'vertical', 'gable'],
-  },
+    tags: ['office', 'commercial', 'four cars', 'business', 'curved', 'gable'],
+  },*/
   {
     id: 7,
     size: '18×25×9',
     name: 'Double SUV Shelter',
     capacity: 2,
     capLabel: '2 Cars',
-    roof: 'Vertical Roof',
-    cover: 'Full Cover',
+    roof: 'Curved Roof',
+    cover: 'Waterproof',
     material: 'Car Board Fabric',
-    shortDesc: 'Wide and tall double bay for large SUVs and Land Cruisers. Vertical roof with Car Board Fabric gives a clean, modern residential look.',
-    fullDesc: 'Designed for the household running two large SUVs — Range Rover, Land Cruiser, Nissan Patrol, or similar. The 18×25×9 gives both vehicles ample width and the 9-foot eave height means roof-mounted accessories never clip the structure. Car Board Fabric roofing is UV-resistant, water-tight, and maintains a softer residential appearance compared to metal sheets — many homeowners prefer it for front-of-house carports. The Vertical Roof design sheds rain quickly and efficiently in heavy downpours.',
+    shortDesc: 'Wide and tall double bay for large SUVs and Land Cruisers. Curved roof with Car Board Fabric gives a clean, modern residential look.',
+    fullDesc: 'Designed for the household running two large SUVs — Range Rover, Land Cruiser, Nissan Patrol, or similar. The 18×25×9 gives both vehicles ample width and the 9-foot eave height means roof-mounted accessories never clip the structure. Car Board Fabric roofing is UV-resistant, water-tight, and maintains a softer residential appearance compared to metal sheets — many homeowners prefer it for front-of-house carports. The Curved Roof design sheds rain quickly and efficiently in heavy downpours.',
     specs: {
       'Building Width': '18 FT (approx. 5.49m)',
       'Building Length': '25 FT (approx. 7.62m)',
       'Eave Height': '9 FT (approx. 2.74m)',
-      'Roof Type': 'Vertical Roof',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Curved Roof',
+      'Cover Type': 'Waterproof',
       'Frame Type': 'Galvanized Steel Frame',
       'Roofing Material': 'Car Board Fabric',
       'Best For': 'Large SUVs, 4x4 Vehicles',
     },
     dims: { w: '18 FT', l: '25 FT', h: '9 FT' },
-    img: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=900&q=85',
+    img: 'images/5.jpg',
     carTypes: ['largesuv', 'midsuv'],
     skuCode: 'BC-DS-1801',
     tags: ['suv', 'double', 'land cruiser', 'patrol', 'range rover', 'large suv'],
+    images: ['images/5.jpg', 'images/9.jpg', 'images/25.PNG'],
   },
   {
     id: 8,
@@ -201,8 +207,8 @@ const CARPORTS = [
     name: 'Double Open Canopy',
     capacity: 2,
     capLabel: '2 Cars',
-    roof: 'Open Canopy',
-    cover: 'Partial Cover',
+    roof: 'Flat Roof',
+    cover: 'Non Waterproof',
     material: 'Local Board',
     shortDesc: 'A breezy open canopy for two cars — sun shading without full enclosure. Ideal for compounds where ventilation matters more than rain protection.',
     fullDesc: 'Sometimes you want shade without walls — the 20×20×7 Double Open Canopy gives you a defined parking structure with a flat canopy roof and open sides. Great for compounds in more sheltered locations, or for homeowners who prefer airflow over full enclosure. Built with Local Board roofing, it\'s an affordable way to get two dedicated parking spots defined and covered. The open sides also make it easier to manoeuvre larger vehicles in tight compounds.',
@@ -210,35 +216,36 @@ const CARPORTS = [
       'Building Width': '20 FT (approx. 6.1m)',
       'Building Length': '20 FT (approx. 6.1m)',
       'Eave Height': '7 FT (approx. 2.13m)',
-      'Roof Type': 'Open Canopy',
-      'Cover Type': 'Partial Cover',
+      'Roof Type': 'Flat Roof',
+      'Cover Type': 'Non Waterproof',
       'Frame Type': 'Galvanized Steel Frame',
       'Roofing Material': 'Local Board',
       'Best For': 'Open Compounds, Breezy Locations',
     },
     dims: { w: '20 FT', l: '20 FT', h: '7 FT' },
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85',
+    img: 'images/26.PNG',
     carTypes: ['compact', 'sedan', 'midsuv'],
     skuCode: 'BC-OC-2001',
     tags: ['open', 'canopy', 'shade', 'ventilation', 'two cars', 'partial'],
+    images: ['images/26.PNG', 'images/27.PNG', 'images/28.jpg'],
   },
-  {
+ /* {
     id: 9,
     size: '40×30×12',
     name: 'Fleet Commercial Cover',
     capacity: 5,
     capLabel: '5+ Cars',
-    roof: 'Vertical Roof',
-    cover: 'Full Cover',
+    roof: 'Curved Roof',
+    cover: 'Loco Board',
     material: 'Imported Sheets',
     shortDesc: 'Large-span commercial structure for 5–10 vehicles. Built for office compounds, schools, hotels, and business fleets. Custom-engineered to your site.',
-    fullDesc: 'The 40×30×12 Fleet Commercial Cover is our largest standard configuration — and the starting point for any serious fleet operation. At 40 feet wide, 30 feet long, and 12-foot eave height, this structure covers 5 to 8 vehicles depending on layout, with comfortable clearance for tall vans and minibuses. The Vertical Roof design is the most structurally sound option for large-span structures, handling heavy rain loads without sagging or flexing. Premium Imported Sheet roofing is sourced from international suppliers and rated for commercial-grade durability. We custom-engineer each installation to the exact dimensions of your site.',
+    fullDesc: 'The 40×30×12 Fleet Commercial Cover is our largest standard configuration — and the starting point for any serious fleet operation. At 40 feet wide, 30 feet long, and 12-foot eave height, this structure covers 5 to 8 vehicles depending on layout, with comfortable clearance for tall vans and minibuses. The Curved Roof design is the most structurally sound option for large-span structures, handling heavy rain loads without sagging or flexing. Premium Imported Sheet roofing is sourced from international suppliers and rated for commercial-grade durability. We custom-engineer each installation to the exact dimensions of your site.',
     specs: {
       'Building Width': '40 FT (approx. 12.19m)',
       'Building Length': '30 FT (approx. 9.14m)',
       'Eave Height': '12 FT (approx. 3.66m)',
-      'Roof Type': 'Vertical Roof',
-      'Cover Type': 'Full Cover',
+      'Roof Type': 'Curved Roof',
+      'Cover Type': 'Loco Board',
       'Frame Type': 'Heavy-Duty Galvanized Steel',
       'Roofing Material': 'Imported Sheets (Commercial Grade)',
       'Best For': 'Fleet Parking, Commercial, Offices',
@@ -248,15 +255,15 @@ const CARPORTS = [
     carTypes: ['compact', 'sedan', 'midsuv', 'largesuv', 'pickup', 'van'],
     skuCode: 'BC-FL-4001',
     tags: ['fleet', 'commercial', 'office', 'large', 'five plus', 'school', 'hotel'],
-  },
+  },*/
   {
     id: 10,
     size: '12×20×7',
     name: 'Steel Frame Only — Single Bay',
     capacity: 1,
     capLabel: '1 Car',
-    roof: 'Regular Roof',
-    cover: 'Frame Only',
+    roof: 'Curved Roof',
+    cover: 'Non Waterproof',
     material: 'Local Board',
     shortDesc: 'A galvanized steel frame structure with no roofing material — the skeleton built, ready for you to choose and add covering later.',
     fullDesc: 'Sometimes you want the parking structure defined first, with the roofing coming later as budget allows. The Steel Frame Only option gives you a solid, galvanized steel carport frame installed and anchored on your site — pillars, cross-beams, roof trusses — with no roofing panels. You can add Local Board, Fiberglass, or Imported Sheets at any point after. Also popular for temporary parking bays that just need a defined, marked structure. The frame itself is powder-coated and rust-resistant.',
@@ -264,17 +271,18 @@ const CARPORTS = [
       'Building Width': '12 FT (approx. 3.65m)',
       'Building Length': '20 FT (approx. 6.1m)',
       'Eave Height': '7 FT (approx. 2.13m)',
-      'Roof Type': 'Regular Roof (Frame Only)',
+      'Roof Type': 'Curved Roof (Frame Only)',
       'Cover Type': 'Frame Only — No Roofing',
       'Frame Type': 'Powder-Coated Galvanized Steel',
       'Roofing Material': 'None (frame only)',
       'Best For': 'Phased build, Temporary bay',
     },
     dims: { w: '12 FT', l: '20 FT', h: '7 FT' },
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85',
+    img: 'images/12.jpg',
     carTypes: ['compact', 'sedan'],
     skuCode: 'BC-FO-1201',
     tags: ['frame', 'no cover', 'frame only', 'steel frame', 'temporary', 'skeleton'],
+    images: ['images/12.jpg', 'images/12.png', 'images/13.png'],
   },
 ];
 
@@ -479,13 +487,70 @@ function resetAll() {
   render();
 }
 
-// ─── CAPACITY PILLS ─────────────────────────
+// ─── CAPACITY PILLS (updated: 1/2/3/4+) ────
 $$('.cap-pill').forEach(btn => {
   btn.addEventListener('click', () => {
     $$('.cap-pill').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     S.cap = btn.dataset.cap;
-    render();
+
+    // 4+ shows enquiry form instead of filtering grid
+    const enqBox = $('customEnquiryBox');
+    if (S.cap === '4+') {
+      enqBox.style.display = 'flex';
+      // Don't filter — show all results until form submitted
+    } else {
+      enqBox.style.display = 'none';
+      render();
+    }
+  });
+});
+
+// ─── 4+ ENQUIRY FORM SUBMIT → WHATSAPP ──────
+$('enqSubmitBtn').addEventListener('click', () => {
+  const vehicleType  = $('enqVehicleType').value;
+  const vehicleCount = $('enqVehicleCount').value;
+  const roofType     = $('enqRoofType').value;
+  const waterproof   = document.querySelector('input[name="enqWaterproof"]:checked');
+  const notes        = $('enqNotes').value.trim();
+
+  // Basic validation
+  if (!vehicleType || !vehicleCount || !roofType || !waterproof) {
+    // Highlight missing fields
+    if (!vehicleType)   $('enqVehicleType').style.borderColor  = '#dc2626';
+    if (!vehicleCount)  $('enqVehicleCount').style.borderColor = '#dc2626';
+    if (!roofType)      $('enqRoofType').style.borderColor     = '#dc2626';
+    if (!waterproof) {
+      document.querySelectorAll('.enq-radio-box').forEach(b => b.style.borderColor = '#dc2626');
+    }
+    return;
+  }
+
+  // Build WhatsApp message
+  const msg = [
+    `Hi, I need a custom carport for 4+ cars. Here are my requirements:`,
+    ``,
+    `🚗 Vehicle Type: ${vehicleType}`,
+    `🔢 Number of Vehicles: ${vehicleCount}`,
+    `🏠 Roof Style: ${roofType}`,
+    `🌧️ Roofing Material: ${waterproof.value}`,
+    notes ? `📝 Extra Details: ${notes}` : '',
+    ``,
+    `Please help me with a custom quote.`,
+  ].filter(Boolean).join('\n');
+
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+});
+
+// Clear red borders on change
+['enqVehicleType','enqVehicleCount','enqRoofType'].forEach(id => {
+  $$(id) && $(`#${id}`) && $(`${id}`)?.addEventListener('change', function() {
+    this.style.borderColor = '';
+  });
+});
+document.querySelectorAll('input[name="enqWaterproof"]').forEach(r => {
+  r.addEventListener('change', () => {
+    document.querySelectorAll('.enq-radio-box').forEach(b => b.style.borderColor = '');
   });
 });
 
@@ -531,9 +596,21 @@ $('carSelect').addEventListener('change', e => {
 });
 
 // ─── RESET BUTTONS ──────────────────────────
+function resetAll() {
+  S.cap = 'all'; S.roofs = []; S.covers = []; S.mats = []; S.search = ''; S.carType = '';
+  $$('.cap-pill').forEach(b => b.classList.remove('active'));
+  document.querySelector('.cap-pill[data-cap="all"]').classList.add('active');
+  $$('input[name="roof"], input[name="cover"], input[name="material"]').forEach(cb => cb.checked = false);
+  $('searchInput').value = ''; $('searchClear').style.display = 'none';
+  $('carSelect').value = '';
+  const enqBox = $('customEnquiryBox');
+  if (enqBox) enqBox.style.display = 'none';
+  render();
+}
 $('resetAll').addEventListener('click', resetAll);
 $('noResReset').addEventListener('click', resetAll);
-$('resetAllMobile').addEventListener('click', resetAll);
+const resetMob = $('resetAllMobile');
+if (resetMob) resetMob.addEventListener('click', resetAll);
 
 // ─── MOBILE SIDEBAR ─────────────────────────
 const sidebar  = $('filterSidebar');
@@ -541,21 +618,26 @@ const overlay  = $('sidebarOverlay');
 const mobBtn   = $('mobFilterBtn');
 function openSidebar()  { sidebar.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
 function closeSidebar() { sidebar.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
-mobBtn.addEventListener('click', openSidebar);
-overlay.addEventListener('click', closeSidebar);
-$('applyMobile').addEventListener('click', closeSidebar);
+if (mobBtn)  mobBtn.addEventListener('click', openSidebar);
+if (overlay) overlay.addEventListener('click', closeSidebar);
+const applyMob = $('applyMobile');
+if (applyMob) applyMob.addEventListener('click', closeSidebar);
 
-// ─── HAMBURGER ──────────────────────────────
+// ─── HAMBURGER (mobile nav) ──────────────────
 const hbg  = $('hamburger');
-const mnav = $('mainNav');
-hbg.addEventListener('click', () => {
-  const open = hbg.classList.toggle('open');
-  mnav.classList.toggle('open', open);
-  document.body.style.overflow = open ? 'hidden' : '';
-});
-mnav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  hbg.classList.remove('open'); mnav.classList.remove('open'); document.body.style.overflow = '';
-}));
+const mnav = $('mobileNav');
+if (hbg && mnav) {
+  hbg.addEventListener('click', () => {
+    const open = hbg.classList.toggle('open');
+    mnav.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mnav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    hbg.classList.remove('open');
+    mnav.classList.remove('open');
+    document.body.style.overflow = '';
+  }));
+}
 
 // ─── STICKY HEADER ──────────────────────────
 window.addEventListener('scroll', () => {
@@ -565,10 +647,13 @@ window.addEventListener('scroll', () => {
 // ─── SMOOTH SCROLL ──────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
-    if (!t) return;
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
     e.preventDefault();
-    window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 74, behavior: 'smooth' });
+    window.scrollTo({ top: target.getBoundingClientRect().top + scrollY - 74, behavior: 'smooth' });
+    // close mobile nav if open
+    const hbg = $('hamburger'); const mnav = $('mobileNav');
+    if (hbg && mnav) { hbg.classList.remove('open'); mnav.classList.remove('open'); document.body.style.overflow = ''; }
   });
 });
 
@@ -577,19 +662,73 @@ const modalOverlay = $('modalOverlay');
 const modal        = $('productModal');
 const modalClose   = $('modalClose');
 
+// Gallery state
+let galleryImages = [];
+let galleryIndex  = 0;
+
+// Each product gets multiple images built from its single img
+// In real use you'd add an `images: [...]` array to each carport object
+// For now we generate 4 views from the one image (replace with real photos)
+function getImages(c) {
+  // If carport has an images array use it, otherwise repeat the one image
+  if (c.images && c.images.length) return c.images;
+  // Use the single image for all slots — client replaces with real photos later
+  return [c.img, c.img, c.img, c.img];
+}
+
+function setGalleryImage(index) {
+  const img   = $('modalImg');
+  const ctr   = $('mgCounter');
+  galleryIndex = Math.max(0, Math.min(index, galleryImages.length - 1));
+
+  img.style.opacity = '0';
+  setTimeout(() => {
+    img.src = galleryImages[galleryIndex];
+    img.style.opacity = '1';
+  }, 150);
+
+  ctr.textContent = `${galleryIndex + 1} / ${galleryImages.length}`;
+
+  // Update thumb active state
+  $$('.modal-thumb').forEach((t, i) => t.classList.toggle('active', i === galleryIndex));
+}
+
 function openModal(id) {
   const c = CARPORTS.find(x => x.id === id);
   if (!c) return;
 
-  // Populate
-  $('modalImg').src         = c.img;
-  $('modalImg').alt         = c.name;
-  $('modalCapBadge').textContent = c.capLabel;
-  $('modalTitle').textContent    = `${c.size} ft — ${c.name}`;
-  $('modalDescShort').textContent = c.shortDesc;
-  $('modalSku').textContent  = `SKU: ${c.skuCode}`;
-  $('modalFullDesc').textContent = c.fullDesc;
-  $('modalWaBtn').href       = waLink(c.size + ' ' + c.name);
+  // ── Gallery setup ──
+  galleryImages = getImages(c);
+  galleryIndex  = 0;
+
+  const mainImg = $('modalImg');
+  mainImg.src     = galleryImages[0];
+  mainImg.alt     = c.name;
+  mainImg.style.opacity = '1';
+  $('mgCounter').textContent = `1 / ${galleryImages.length}`;
+
+  // Build thumbnail strip
+  const thumbsEl = $('modalThumbs');
+  thumbsEl.innerHTML = '';
+  galleryImages.forEach((src, i) => {
+    const div = document.createElement('div');
+    div.className = `modal-thumb${i === 0 ? ' active' : ''}`;
+    div.innerHTML = `<img src="${src}" alt="View ${i+1}" loading="lazy"/>`;
+    div.addEventListener('click', () => setGalleryImage(i));
+    thumbsEl.appendChild(div);
+  });
+
+  // Show/hide arrows
+  $('mgPrev').style.display = galleryImages.length > 1 ? 'flex' : 'none';
+  $('mgNext').style.display = galleryImages.length > 1 ? 'flex' : 'none';
+
+  // ── Info ──
+  $('modalCapBadge').textContent    = c.capLabel;
+  $('modalTitle').textContent       = `${c.size} ft — ${c.name}`;
+  $('modalDescShort').textContent   = c.shortDesc;
+  $('modalSku').textContent         = `SKU: ${c.skuCode}`;
+  $('modalFullDesc').textContent    = c.fullDesc;
+  $('modalWaBtn').href              = waLink(c.size + ' ' + c.name);
 
   // Dims
   $('dimWidthVal').textContent = c.dims.w;
@@ -605,9 +744,7 @@ function openModal(id) {
     table.appendChild(tr);
   });
 
-  // Reset to specs tab
   showTab('specs');
-
   modalOverlay.classList.add('open');
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -619,9 +756,31 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
+// Gallery navigation
+$('mgPrev').addEventListener('click', e => { e.stopPropagation(); setGalleryImage(galleryIndex - 1); });
+$('mgNext').addEventListener('click', e => { e.stopPropagation(); setGalleryImage(galleryIndex + 1); });
+
+// Touch swipe on main image
+let touchStartX = 0;
+$('modalImg').addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+$('modalImg').addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 40) {
+    if (diff > 0) setGalleryImage(galleryIndex + 1);
+    else          setGalleryImage(galleryIndex - 1);
+  }
+});
+
+// Keyboard navigation inside modal
+document.addEventListener('keydown', e => {
+  if (!modal.classList.contains('open')) return;
+  if (e.key === 'Escape')      closeModal();
+  if (e.key === 'ArrowLeft')   setGalleryImage(galleryIndex - 1);
+  if (e.key === 'ArrowRight')  setGalleryImage(galleryIndex + 1);
+});
+
 modalClose.addEventListener('click', closeModal);
 modalOverlay.addEventListener('click', closeModal);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 // Modal tabs
 function showTab(tabId) {
@@ -629,9 +788,7 @@ function showTab(tabId) {
   $('tab-specs').style.display = tabId === 'specs' ? 'block' : 'none';
   $('tab-desc').style.display  = tabId === 'desc'  ? 'block' : 'none';
 }
-$$('.modal-tab').forEach(tab => {
-  tab.addEventListener('click', () => showTab(tab.dataset.tab));
-});
+$$('.modal-tab').forEach(tab => tab.addEventListener('click', () => showTab(tab.dataset.tab)));
 
 // ─── FOOTER YEAR ────────────────────────────
 $('fyear').textContent = new Date().getFullYear();
