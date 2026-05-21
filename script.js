@@ -84,11 +84,11 @@ const CARPORTS = [
       'Best For': 'Large SUVs, Pickup Trucks',
     },
     dims: { w: '20 FT', l: '20 FT', h: '9 FT' },
-    img: 'images/2cars2.png',
+    img: 'images/2cars2.PNG',
     carTypes: ['midsuv', 'largesuv', 'pickup'],
     skuCode: 'BC-BE-2001',
     tags: ['suv', 'pickup', 'hilux', 'fortuner', 'prado', 'ranger', 'd-max', 'large'],
-    images: ['images/2cars2.png', 'images/21.jpg', 'images/22.jpg'],
+    images: ['images/2cars2.PNG', 'images/21.jpg', 'images/22.jpg'],
   },
   {
     id: 4,
