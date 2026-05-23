@@ -166,7 +166,7 @@ button { cursor: pointer; font-family: inherit; }
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(120deg, rgba(15,45,107,.88) 40%, rgba(15,45,107,.5) 100%);
+  background: linear-gradient(120deg, rgba(28, 30, 34, 0.88) 40%, rgba(26, 28, 32, 0.5) 100%);
 }
 .hero-inner { position: relative; z-index: 1; padding: 5rem 1.5rem; }
 .hero-content { max-width: 620px; display: flex; flex-direction: column; gap: 1.4rem; }
@@ -520,7 +520,7 @@ button { cursor: pointer; font-family: inherit; }
 .contact-bg-img img { width: 100%; height: 100%; object-fit: cover; }
 .contact-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(120deg, rgba(15,45,107,.92) 40%, rgba(15,45,107,.65) 100%);
+  background: linear-gradient(120deg, rgba(38, 38, 41, 0.92) 40%, rgba(16, 16, 16, 0.65) 100%);
 }
 .contact-inner {
   position: relative; z-index: 1;
