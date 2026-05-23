@@ -26,8 +26,8 @@ const GALLERY = [
   // ── COMMERCIAL ──
   { id:7,  type:'photo', cat:'images', src:'images/17.jpg', thumb:'images/17.jpg', tags:['multi'] },
   { id:8,  type:'photo', cat:'images', src:'images/18.jpg', thumb:'images/18.jpg', tags:['multi'] },
-  { id:9,  type:'photo', cat:'images', src:'images/19.png', thumb:'images/19.PNG', tags:['multi'] },
-  { id:10, type:'photo', cat:'images', src:'images/20.png', thumb:'images/20.PNG', tags:['multi'] },
+  { id:9,  type:'photo', cat:'images', src:'images/19.PNG', thumb:'images/19.PNG', tags:['multi'] },
+  { id:10, type:'photo', cat:'images', src:'images/20.PNG', thumb:'images/20.PNG', tags:['multi'] },
 
   // ── IN PROGRESS ──
   { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/21.jpg', tags:['multi'] },

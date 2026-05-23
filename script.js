@@ -530,11 +530,11 @@ $('enqSubmitBtn').addEventListener('click', () => {
   const msg = [
     `Hi, I need a custom carport for 4+ cars. Here are my requirements:`,
     ``,
-    `🚗 Vehicle Type: ${vehicleType}`,
-    `🔢 Number of Vehicles: ${vehicleCount}`,
-    `🏠 Roof Style: ${roofType}`,
-    `🌧️ Roofing Material: ${waterproof.value}`,
-    notes ? `📝 Extra Details: ${notes}` : '',
+    `Vehicle Type: ${vehicleType}`,
+    `Number of Vehicles: ${vehicleCount}`,
+    `Roof Style: ${roofType}`,
+    `Roofing Material: ${waterproof.value}`,
+    notes ? `Extra Details: ${notes}` : '',
     ``,
     `Please help me with a custom quote.`,
   ].filter(Boolean).join('\n');
