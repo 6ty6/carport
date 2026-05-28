@@ -7,21 +7,22 @@
   <meta name="description" content="See carports we've built across Accra and Greater Accra. Photos and videos of our work — residential, commercial, single to fleet."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="gallery.css"/>
-  <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="gallery.css"/>
+  
+  link rel="icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
 
 <!-- ====================================================
-  HERO
+  HEADER
 ===================================================== -->
 <header class="site-header" id="siteHeader">
   <!-- Full-width inner — no container class so nav can be truly centred -->
   <div class="header-inner">
 
     <!-- LEFT: Logo -->
-    <a href="index.html" class="logo">
+    <a href="#home" class="logo">
       <img class="logo-mark" src="images/logo.png" alt="AW Canopies and Carports">
       <div class="logo-words">
         <span class="logo-big">AW Canopies</span>
@@ -35,7 +36,7 @@
       <a href="index.html#browse">Browse</a>
       <a href="index.html#materials">Materials</a>
       <a href="gallery.html" class="active">Gallery</a>
-       <a href="index.html#about">About Us</a>
+      <a href="index.html#about">About Us</a>
     </nav>
 
     <!-- RIGHT: WhatsApp CTA + hamburger -->
@@ -54,22 +55,13 @@
 
   <!-- Mobile nav drawer -->
   <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html">Home</a>
+    <a href="index.html#home">Home</a>
     <a href="index.html#browse">Browse</a>
     <a href="index.html#materials">Materials</a>
     <a href="gallery.html">Gallery</a>
-     <a href="index.html#about">About Us</a>
+    <a href="index.html#about">About Us</a>
   </nav>
 </header>
-
-<!-- MOBILE NAV -->
-<nav class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a>
-  <a href="index.html#browse">Browse Carports</a>
-  <a href="index.html#materials">Materials</a>
-  <a href="gallery.html" class="active">Gallery</a>
-  <a href="index.html#contact">Contact</a>
-</nav>
 
 <!-- ── HERO ── -->
 <section class="gallery-hero">
@@ -155,17 +147,17 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="#" class="logo logo--footer">
-        <img class="logo-mark" src="images/logo.png" alt="AW Canopies and Carports">
+       <img class="logo-mark" src="images/logo.png" alt="AW Canopies and Carports">
         <div class="logo-words"><span class="logo-big">AW Canopies</span><span class="logo-small">and Carports · Accra</span></div>
       </a>
       <p>Where quality meets affordability.<br/>Accra, Greater Accra, Ghana 🇬🇭</p>
     </div>
     <div class="footer-links">
       <h4>Navigate</h4>
-      <a href="index.html#browse">Browse Canopies</a>
-      <a href="index.html#materials">Materials</a>
-      <a href="index.html#about">About Us</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#browse">Browse Canopies</a>
+      <a href="#materials">Materials</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
     </div>
     <div class="footer-links">
       <h4>Follow Us</h4>
@@ -190,7 +182,6 @@
     </div>
   </div>
 </footer>
-
 <!-- ── FLOATING WA ── -->
 <a class="float-wa"
    href="https://wa.me/233000000000?text=Hi%2C+I%27m+interested+in+a+carport.+Can+you+help+me+with+a+quote%3F"

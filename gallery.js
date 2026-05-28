@@ -222,9 +222,23 @@ $('lightbox').addEventListener('touchend', e => {
 // ──────────────────────────────────────────────────────────
 // HEADER SCROLL
 // ──────────────────────────────────────────────────────────
+// ─── STICKY HEADER ──────────────────────────
 window.addEventListener('scroll', () => {
-  $('gHeader').classList.toggle('scrolled', scrollY > 20);
+  $('siteHeader').classList.toggle('scrolled', scrollY > 24);
 }, { passive: true });
+
+// ─── SMOOTH SCROLL ──────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    window.scrollTo({ top: target.getBoundingClientRect().top + scrollY - 74, behavior: 'smooth' });
+    // close mobile nav if open
+    const hbg = $('hamburger'); const mnav = $('mobileNav');
+    if (hbg && mnav) { hbg.classList.remove('open'); mnav.classList.remove('open'); document.body.style.overflow = ''; }
+  });
+});
 
 // ──────────────────────────────────────────────────────────
 // HAMBURGER
