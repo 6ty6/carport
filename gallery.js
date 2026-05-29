@@ -16,29 +16,29 @@
 // ──────────────────────────────────────────────────────────
 const GALLERY = [
   // ── RESIDENTIAL ──
-  { id:1,  type:'photo', cat:'images', src:'images/11.jpg', thumb:'images/11.jpg', tags:['single'] },
-  { id:2,  type:'photo', cat:'images', src:'images/12.jpg', thumb:'images/12.jpg',  tags:['multi'] },
-  { id:3,  type:'photo', cat:'images', src:'images/13.jpg', thumb:'images/13.jpg', tags:['single'] },
-  { id:4,  type:'photo', cat:'images', src:'images/14.jpg', thumb:'images/14.jpg', tags:['single'] },
-  { id:5,  type:'photo', cat:'images', src:'images/15.jpg', thumb:'images/15.jpg', tags:['multi'] },
-  { id:6,  type:'photo', cat:'images', src:'images/16.jpg', thumb:'images/16.jpg', tags:['multi'] },
+  { id:1,  type:'photo', cat:'images', src:'images/11.jpg', thumb:'images/11.jpg', caption:'Residential canopy', tags:['single'] },
+  { id:2,  type:'photo', cat:'images', src:'images/12.jpg', thumb:'images/12.jpg', caption:'Project in progress', tags:['multi'] },
+  { id:3,  type:'photo', cat:'images', src:'images/13.jpg', thumb:'images/13.jpg', caption:'Single-bay shelter', tags:['single'] },
+  { id:4,  type:'photo', cat:'images', src:'images/14.jpg', thumb:'images/14.jpg', caption:'Driveway carport', tags:['single'] },
+  { id:5,  type:'photo', cat:'images', src:'images/15.jpg', thumb:'images/15.jpg', caption:'Double-bay cover', tags:['multi'] },
+  { id:6,  type:'photo', cat:'images', src:'images/16.jpg', thumb:'images/16.jpg', caption:'Finished installation', tags:['multi'] },
 
   // ── COMMERCIAL ──
-  { id:7,  type:'photo', cat:'images', src:'images/17.jpg', thumb:'images/17.jpg', tags:['multi'] },
-  { id:8,  type:'photo', cat:'images', src:'images/18.jpg', thumb:'images/18.jpg', tags:['multi'] },
-  { id:9,  type:'photo', cat:'images', src:'images/19.PNG', thumb:'images/19.PNG', tags:['multi'] },
-  { id:10, type:'photo', cat:'images', src:'images/20.PNG', thumb:'images/20.PNG', tags:['multi'] },
+  { id:7,  type:'photo', cat:'images', src:'images/17.jpg', thumb:'images/17.jpg', caption:'Commercial canopy', tags:['multi'] },
+  { id:8,  type:'photo', cat:'images', src:'images/18.jpg', thumb:'images/18.jpg', caption:'Steel frame work', tags:['multi'] },
+  { id:9,  type:'photo', cat:'images', src:'images/19.PNG', thumb:'images/19.PNG', caption:'Wide-span shelter', tags:['multi'] },
+  { id:10, type:'photo', cat:'images', src:'images/20.PNG', thumb:'images/20.PNG', caption:'Large coverage bay', tags:['multi'] },
 
   // ── IN PROGRESS ──
-  { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/21.jpg', tags:['multi'] },
-  { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/22.jpg', tags:['single'] },
-  { id:13, type:'photo', cat:'images', src:'images/23.jpg', thumb:'images/23.jpg', tags:['multi'] },
+  { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/21.jpg', caption:'Site preparation', tags:['multi'] },
+  { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/22.jpg', caption:'Open-air canopy', tags:['single'] },
+  { id:13, type:'photo', cat:'images', src:'images/23.jpg', thumb:'images/23.jpg', caption:'Custom carport build', tags:['multi'] },
 
   // ── VIDEOS (placeholder — replace src with real video URLs) ──
-  { id:14, type:'video', cat:'video', src:'videos/IMG_2740.mp4', thumb:'videos/thumb1.png', tags:['multi'] },
-  { id:15, type:'video', cat:'video', src:'videos/IMG_2733.mp4', thumb:'videos/thumb2.png', tags:['multi'] },
-  { id:16, type:'video', cat:'video', src:'videos/IMG_2734.mp4', thumb:'videos/thumb3.png', tags:['multi'] },
-  { id:17, type:'video', cat:'video', src:'videos/IMG_2735.mp4', thumb:'videos/thumb4.png', tags:['multi'] }
+  { id:14, type:'video', cat:'video', src:'videos/IMG_2740.mp4', thumb:'videos/thumb1.png', caption:'Installation video', tags:['multi'] },
+  { id:15, type:'video', cat:'video', src:'videos/IMG_2733.mp4', thumb:'videos/thumb2.png', caption:'Build walkthrough', tags:['multi'] },
+  { id:16, type:'video', cat:'video', src:'videos/IMG_2734.mp4', thumb:'videos/thumb3.png', caption:'Project progress', tags:['multi'] },
+  { id:17, type:'video', cat:'video', src:'videos/IMG_2735.mp4', thumb:'videos/thumb4.png', caption:'Completed canopy', tags:['multi'] }
 ];
 
 // ──────────────────────────────────────────────────────────
@@ -101,16 +101,16 @@ function renderGallery() {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:11px;height:11px;"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
               Video
             </span>
-            <span class="item-caption">${item.caption}</span>
+            <span class="item-caption">${item.caption || 'Gallery item'}</span>
           </div>
         </div>`;
     } else {
       div.innerHTML = `
-        <img src="${item.thumb}" alt="${item.caption}" loading="lazy" style="border-radius:12px;"/>
+        <img src="${item.thumb}" alt="${item.caption || 'Gallery item'}" loading="lazy" style="border-radius:12px;"/>
         <div class="item-overlay">
           <div class="item-meta">
             <span class="item-cat-tag">${catLabel(item.cat)}</span>
-            <span class="item-caption">${item.caption}</span>
+            <span class="item-caption">${item.caption || 'Gallery item'}</span>
           </div>
         </div>`;
     }
@@ -177,10 +177,10 @@ function showLbItem() {
       vid.pause(); vid.src = '';
       img.style.display = 'block';
       img.src = item.src;
-      img.alt = item.caption;
+      img.alt = item.caption || 'Gallery item';
       img.style.opacity = '1';
     }
-    cap.textContent = item.caption;
+    cap.textContent = item.caption || catLabel(item.cat);
     ctr.textContent = `${lbIndex + 1} / ${activeItems.length}`;
   }, 150);
 }
