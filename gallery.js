@@ -16,7 +16,7 @@
 // ──────────────────────────────────────────────────────────
 const GALLERY = [
   // ── RESIDENTIAL ──
-  { id:1,  type:'photo', cat:'images', src:'images/11.jpg', thumb:'images/11.jpg', caption:'Residential canopy', tags:['single'] },
+  { id:1,  type:'photo', cat:'images', src:'images/11.jpg', thumb:'images/11.jpg', caption:'Residential carport', tags:['single'] },
   { id:2,  type:'photo', cat:'images', src:'images/12.jpg', thumb:'images/12.jpg', caption:'Project in progress', tags:['multi'] },
   { id:3,  type:'photo', cat:'images', src:'images/13.jpg', thumb:'images/13.jpg', caption:'Single-bay shelter', tags:['single'] },
   { id:4,  type:'photo', cat:'images', src:'images/14.jpg', thumb:'images/14.jpg', caption:'Driveway carport', tags:['single'] },
@@ -24,21 +24,24 @@ const GALLERY = [
   { id:6,  type:'photo', cat:'images', src:'images/16.jpg', thumb:'images/16.jpg', caption:'Finished installation', tags:['multi'] },
 
   // ── COMMERCIAL ──
-  { id:7,  type:'photo', cat:'images', src:'images/17.jpg', thumb:'images/17.jpg', caption:'Commercial canopy', tags:['multi'] },
+  { id:7,  type:'photo', cat:'images', src:'images/17.jpg', thumb:'images/17.jpg', caption:'Commercial carport', tags:['multi'] },
   { id:8,  type:'photo', cat:'images', src:'images/18.jpg', thumb:'images/18.jpg', caption:'Steel frame work', tags:['multi'] },
   { id:9,  type:'photo', cat:'images', src:'images/19.PNG', thumb:'images/19.PNG', caption:'Wide-span shelter', tags:['multi'] },
   { id:10, type:'photo', cat:'images', src:'images/20.PNG', thumb:'images/20.PNG', caption:'Large coverage bay', tags:['multi'] },
 
   // ── IN PROGRESS ──
   { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/21.jpg', caption:'Site preparation', tags:['multi'] },
-  { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/22.jpg', caption:'Open-air canopy', tags:['single'] },
+  { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/22.jpg', caption:'Open-air carport', tags:['single'] },
   { id:13, type:'photo', cat:'images', src:'images/23.jpg', thumb:'images/23.jpg', caption:'Custom carport build', tags:['multi'] },
+  { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/trampoline.PNG', caption:'Trampoline installation carport', tags:['multi'] },
+  { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/hero2.PNG', caption:'Trampoline installation carport', tags:['single'] },
+  { id:13, type:'photo', cat:'images', src:'images/23.jpg', thumb:'images/hero.jpeg', caption:'Custom carport build', tags:['multi'] },
 
   // ── VIDEOS (placeholder — replace src with real video URLs) ──
   { id:14, type:'video', cat:'video', src:'videos/IMG_2740.mp4', thumb:'videos/thumb1.png', caption:'Installation video', tags:['multi'] },
   { id:15, type:'video', cat:'video', src:'videos/IMG_2733.mp4', thumb:'videos/thumb2.png', caption:'Build walkthrough', tags:['multi'] },
   { id:16, type:'video', cat:'video', src:'videos/IMG_2734.mp4', thumb:'videos/thumb3.png', caption:'Project progress', tags:['multi'] },
-  { id:17, type:'video', cat:'video', src:'videos/IMG_2735.mp4', thumb:'videos/thumb4.png', caption:'Completed canopy', tags:['multi'] }
+  { id:17, type:'video', cat:'video', src:'videos/IMG_2735.mp4', thumb:'videos/thumb4.png', caption:'Completed carport', tags:['multi'] }
 ];
 
 // ──────────────────────────────────────────────────────────
