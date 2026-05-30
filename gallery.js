@@ -33,9 +33,9 @@ const GALLERY = [
   { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/21.jpg', caption:'Site preparation', tags:['multi'] },
   { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/22.jpg', caption:'Open-air carport', tags:['single'] },
   { id:13, type:'photo', cat:'images', src:'images/23.jpg', thumb:'images/23.jpg', caption:'Custom carport build', tags:['multi'] },
-  { id:11, type:'photo', cat:'images', src:'images/21.jpg', thumb:'images/trampoline.PNG', caption:'Trampoline installation carport', tags:['multi'] },
-  { id:12, type:'photo', cat:'images', src:'images/22.jpg', thumb:'images/hero2.PNG', caption:'Trampoline installation carport', tags:['single'] },
-  { id:13, type:'photo', cat:'images', src:'images/23.jpg', thumb:'images/hero.jpeg', caption:'Custom carport build', tags:['multi'] },
+  { id:11, type:'photo', cat:'images', src:'images/trampoline.PNG', thumb:'images/trampoline.PNG', caption:'Trampoline installation carport', tags:['multi'] },
+  { id:12, type:'photo', cat:'images', src:'images/hero2.PNG', thumb:'images/hero2.PNG', caption:'Trampoline installation carport', tags:['single'] },
+  { id:13, type:'photo', cat:'images', src:'images/hero.jpeg', thumb:'images/hero.jpeg', caption:'Custom carport build', tags:['multi'] },
 
   // ── VIDEOS (placeholder — replace src with real video URLs) ──
   { id:14, type:'video', cat:'video', src:'videos/IMG_2740.mp4', thumb:'videos/thumb1.png', caption:'Installation video', tags:['multi'] },
